@@ -1,0 +1,23 @@
+{
+  "name": "adivinapoblacion",
+  "version": "1.0.0",
+  "description": "Juego sobre adivinar entre 2 banderas quien tiene mas poblacion",
+  "homepage": "https://github.com/Marcos-G-C/AdivinaPoblacion#readme",
+  "bugs": {
+    "url": "https://github.com/Marcos-G-C/AdivinaPoblacion/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcos-G-C/AdivinaPoblacion.git"
+  },
+  "license": "ISC",
+  "author": "Marcos G-C",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "vite": "^8.3.3"
+  }
+}
