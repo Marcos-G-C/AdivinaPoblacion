@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adivina la Población</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Encabezado del juego -->
+      <header class="game-header">
+        <h1>🌍 Adivina la Población</h1>
+        <div class="stats-container">
+          <div class="stat-card">
+            <span class="stat-label">Puntos</span>
+            <span id="score" class="stat-value">0</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Racha</span>
+            <span id="streak" class="stat-value">🔥 0</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Subtítulo / Instrucción -->
+      <p class="instruction">¿Cuál de los dos países tiene mayor población?</p>
+
+      <!-- Arena de comparación de tarjetas -->
+      <main class="game-arena">
+        <!-- Tarjeta País 1 -->
+        <div class="country-card" id="card-left">
+          <div class="flag-container">
+            <img id="flag-left" src="" alt="Bandera País 1" class="flag-img" />
+          </div>
+          <h2 id="name-left" class="country-name">Cargando...</h2>
+          <div class="population-box">
+            <span class="pop-label">Población:</span>
+            <span id="pop-left" class="pop-number">?</span>
+          </div>
+          <button class="btn-select" id="btn-left">Tiene más población</button>
+        </div>
+
+        <!-- Separador VS -->
+        <div class="vs-badge">VS</div>
+
+        <!-- Tarjeta País 2 -->
+        <div class="country-card" id="card-right">
+          <div class="flag-container">
+            <img id="flag-right" src="" alt="Bandera País 2" class="flag-img" />
+          </div>
+          <h2 id="name-right" class="country-name">Cargando...</h2>
+          <div class="population-box">
+            <span class="pop-label">Población:</span>
+            <span id="pop-right" class="pop-number">?</span>
+          </div>
+          <button class="btn-select" id="btn-right">Tiene más población</button>
+        </div>
+      </main>
+
+      <!-- Pantalla de Game Over (oculta por defecto) -->
+      <div id="game-over-modal" class="modal hidden">
+        <div class="modal-content">
+          <h2>¡Fin del Juego!</h2>
+          <p>Has fallado en la comparación.</p>
+          <div class="final-score">
+            <span>Puntuación final:</span>
+            <strong id="final-score-val">0</strong>
+          </div>
+          <button id="btn-restart" class="btn-restart">Jugar de nuevo</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

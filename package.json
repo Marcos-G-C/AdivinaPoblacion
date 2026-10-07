@@ -7,7 +7,7 @@
     "url": "https://github.com/Marcos-G-C/AdivinaPoblacion/issues"
   },
   "repository": {
-    "type": "git",
+    "type": "module",
     "url": "git+https://github.com/Marcos-G-C/AdivinaPoblacion.git"
   },
   "license": "ISC",
@@ -15,9 +15,17 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "format": "prettier --write ."
+},
   "devDependencies": {
+    "prettier": "^3.9.9",
     "vite": "^8.3.3"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.4",
+    "eslint": "^10.12.0"
   }
 }
